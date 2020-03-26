@@ -1,0 +1,31 @@
+服务器地址：
+192.168.1.180
+root
+root123*
+
+定时任务：
+1. 时间：凌晨4点
+操作命令： python3 execute_insert.py
+2. 时间：凌晨4点半
+操作命令： python3 XGBOOST_forecast.py
+
+触发任务：
+1. 触发逻辑：由余琳在前段设置计算按钮，用会通过帆软与系统交互，通过点击“计算”按钮，触发后端的决策算法
+算法命令: /root/AI_SC/AI_SC_V_1.0/run_decision_repl.sh
+
+
+cd /var/spool/mail/root
+
+root/AI_SC/PYTHON3/bin/python3.7
+
+系统Python3的绝对路径
+/usr/local/bin/python3
+
+
+30 4 * * * /root/AI_SC/AI_SC_V_1.0/run_XGBOOST.sh
+00 4 * * * /root/AI_SC/AI_SC_V_1.0/run_execute_insert.sh
+
+
+#!/bin/sh
+/usr/local/bin/python3 /root/AI_SC/AI_SC_V_1.0/execute_insert.py
+echo run execute_insert.py

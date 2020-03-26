@@ -1,0 +1,4 @@
+model_checkpoint_path: "stock_banana.model-2000"
+all_model_checkpoint_paths: "stock_banana.model-0"
+all_model_checkpoint_paths: "stock_banana.model-1000"
+all_model_checkpoint_paths: "stock_banana.model-2000"

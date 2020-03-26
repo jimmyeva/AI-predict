@@ -1,0 +1,23 @@
+/opt/new_retail/profit/input_data/毛利测算测试数据1024.xlsx
+
+sh.elm.path=/opt/new_retail/profit/program/run_profit_elm.sh
+sh.mt.path=/opt/new_retail/profit/program/run_profit_meituan.sh
+
+
+#!/bin/sh
+/usr/local/bin/python3 /opt/new_retail/profit/program/python/profit_meituan.py $1 $2 $3
+echo run profit_meituan.py/
+
+linux 进入redis客户端
+redis-cli
+get  'xf:internal-tools:task:grossProfit:calculation'
+
+传入参数说明：
+1 饿了么 2 京东 3 美团
+
+中间遇到问题处理：
+1. 问题描述，在linux控制台可进行进度条的显示正常并且能够顺利计算，但是通过Java调用的时候就会出现卡死
+原因与解决：java调用shell的时候python 内部的tqdm的显示数据流会直接写入Java的缓存，而不会直接在控制台打印，因此
+当使用Java调用的时候就会出现错误流将缓存卡死，从而无法读取数据不能与python程序进行交互，自己也会被卡死，
+采取的解决方案是将tqdm进行取消，直接使用redis的对应的数据进行进度条显示的问题。
+2. 

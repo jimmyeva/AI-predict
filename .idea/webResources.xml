@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebResourcesPaths">
+    <contentEntries>
+      <entry url="file://$PROJECT_DIR$">
+        <entryData>
+          <resourceRoots>
+            <path value="file://$PROJECT_DIR$/xianfengsg/V1.1" />
+            <path value="file://$PROJECT_DIR$/xianfengsg/forecaset/V1.2" />
+            <path value="file://$PROJECT_DIR$/xianfengsg/forecaset/V1.1" />
+            <path value="file://$PROJECT_DIR$/xianfengsg/other_project" />
+            <path value="file://$PROJECT_DIR$/xianfengsg/forecaset/V1.3" />
+            <path value="file://$PROJECT_DIR$/xianfengsg/forecaset/V1.4" />
+            <path value="file://$PROJECT_DIR$/xianfengsg/forecaset/V1.5-STORE" />
+            <path value="file://$PROJECT_DIR$/xianfengsg/online/V_1.2" />
+            <path value="file://$PROJECT_DIR$/xianfengsg/TEST/statistics_analysis" />
+            <path value="file://$PROJECT_DIR$/xianfengsg/forecaset/V1.6" />
+            <path value="file://$PROJECT_DIR$/xianfengsg/TEST/evaluate_forecast_better" />
+            <path value="file://$PROJECT_DIR$/xianfengsg/TEST/evaluate_AI_HUMAN_02" />
+            <path value="file://$PROJECT_DIR$/xianfengsg/forecaset/V1.7" />
+            <path value="file://$PROJECT_DIR$/xianfengsg/online/V_1.3" />
+            <path value="file://$PROJECT_DIR$/xianfengsg/online/V_1.3/simulation" />
+            <path value="file://$PROJECT_DIR$/xianfengsg/online/V_1.4" />
+            <path value="file://$PROJECT_DIR$/xianfengsg/forecaset/warehouse/V2.0" />
+            <path value="file://$PROJECT_DIR$/xianfengsg/forecaset/warehouse/V2.0/feature" />
+            <path value="file://$PROJECT_DIR$/xianfengsg/forecaset/warehouse/V2.0/algorithm_model" />
+          </resourceRoots>
+        </entryData>
+      </entry>
+    </contentEntries>
+  </component>
+</project>

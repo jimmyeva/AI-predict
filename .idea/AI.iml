@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/xianfengsg/V1.1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xianfengsg/forecaset/V1.2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xianfengsg/forecaset/V1.3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xianfengsg/forecaset/V1.4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xianfengsg/forecaset/V1.5-STORE" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xianfengsg/online/V_1.2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xianfengsg/TEST/statistics_analysis" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xianfengsg/forecaset/V1.6" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xianfengsg/TEST/evaluate_forecast_better" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xianfengsg/TEST/evaluate_AI_HUMAN_02" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xianfengsg/forecaset/V1.7" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xianfengsg/online/V_1.3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xianfengsg/online/V_1.3/simulation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xianfengsg/online/V_1.4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xianfengsg/forecaset/warehouse/V2.0/feature" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/xianfengsg/forecaset/warehouse/V2.0/algorithm_model" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.7" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
+  </component>
+</module>

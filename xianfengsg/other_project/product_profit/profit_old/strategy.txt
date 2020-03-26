@@ -1,0 +1,95 @@
+目标：依据秒杀商品，第一件特价，第二件恢复原价的特价商品，以及常规打折商品，算出毛利最高的十种组合，和毛利最低的十种组合
+问题难度：
+1. 商品数量不确定，无法直接设置特定的循环层数
+1.1 第二种商品的数量和价格，常规品的数量和价格，
+2. 每个商品选择的数量不能确定，每个商品的选择收到价格和满减的金额影响
+3. 无法单纯以组合和DP问题思考，前提假设条件均不满足
+
+解决方案：
+1. 为了达到需方组合的要求必须采取策略算法，以人工定义的策略进行算法程序运行
+
+
+
+解决步骤：
+max_price = 取值满减阈值
+seckill_total = 获取所有秒杀的商品total_sales
+update
+max_price = max_price - seckill_total
+
+max_value = 记录毛利最高的组合总价
+min_value = 记录毛利最低的组合总价
+max_Permutation = 记录毛利最低的组合
+min_Permutation = 记录毛利最低的组合
+all_value = 所有的组合总价
+all_permutation = 所有满足条件组合
+
+
+second_kill_total = 所有第二件恢复原价商品的折后售价总和
+if second_kill_total > max_price: #如果光是全部选择特价商品就能满足满减条件的话，那只需要全部选择特价商品，加上部分特价商品和一个其他商品即可
+	for i in range(特价商品的数量):
+		second_kill_total += 当下特价商品的折后价格
+		if max_price < second_kill_total:	
+			all_permutation = 记录下前i个商品
+			all_value = second_kill_total
+			for k in (所有不再打折的特价商品和常规打折商品)：
+				all_permutation.append(第k个商品)
+				all_value.append(第k个商品的价格）
+		else:
+		pass
+else:		#如果全部选择特价商品还是不能满足满足条件的话，那么就需要再选择部分的其他商品进行组合
+	update 
+	max_price = max_price-second_kill_total
+	all_permutation = 全部特价商品
+	all_value = 全部特价商品总价
+	for x in range(所有不再打折的特价商品和常规打折商品）：
+		if max_price < 第x物品的折后价格：
+			all_permutation.append(第x个商品)
+			all_value.append(第x个商品的价格)
+		else:
+			2nd_max_price = max_price - 第x物品的折后价格
+			for y in range(所有不再打折的特价商品和常规打折商品）：
+				if 2nd_max_price < 第y物品的折后价格：
+					all_permutation.append(第x和第y个商品)
+					all_value.append(第x和第y个商品的价格)
+				else:
+					3nd_max_price = max_price - 第x物品的折后价格 - 第y物品的折后价格
+					for z in range(所有不再打折的特价商品和常规打折商品）：
+						if 2nd_max_price < 第y物品的折后价格：
+							all_permutation.append(第x和第y和第z个商品)
+							all_value.append(第x和第y和第z个商品的价格)
+						else:
+						pass
+		
+		
+
+#参加满减后商品毛利的计算公式
+x= 商品的销售价
+w= 商品以原价销售时的毛利
+c= 商品的成本
+d= 商品的折扣率
+z= 商品以既定折扣销售时的毛利
+k= 所有商品组合下毛利额的总额
+n= 满减的金额
+
+#加入佣金选项
+美团0.88，不满足4元不要钱，满足4元是0.88的折扣，饿了么是0.9
+
+
+y= 某个商品在其中一个组合下的毛利率
+z = (x * d) - c
+y = [(z/k) * (k-n)]/x
+
+(((x['all_profit'][i]/x['all_profit_total']) 
+* (x['all_profit_total']-discount))/x['all_sales_price'])
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
